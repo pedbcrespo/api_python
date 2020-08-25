@@ -1,6 +1,7 @@
 import json
 from flask import Flask, request
 from flask_restful import Resource, Api
+from flask_cors import CORS
 import data_bd
 
 app = Flask(__name__)
