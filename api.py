@@ -6,7 +6,7 @@ import data_bd
 app = Flask(__name__)
 api = Api(app)
 
-
+# se um metodo da classe pede outro parametro alem do self, todas as outras tambem vao ter que pedir, senao da erro
 class User(Resource):
     def get(self):
         return data_bd.get_data('usuario')

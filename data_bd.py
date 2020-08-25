@@ -1,6 +1,6 @@
 import pymysql
 import datetime
-
+# criando conexao com banco de dados, mysql no caso
 connection = pymysql.connect(
     host='localhost',
     user='root',
@@ -10,7 +10,7 @@ connection = pymysql.connect(
 
 cursor = connection.cursor()
 
-
+# funcoes para buscar, alterar, inserir ou deletar dados do banco
 def dic(list_column, datas):
     dc = {}
     for column in list_column:
